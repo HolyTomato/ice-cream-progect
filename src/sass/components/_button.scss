@@ -1,0 +1,233 @@
+.btn {
+  border: 0;
+  outline: none;
+  margin: 0;
+}
+
+.button__product {
+  display: block;
+  padding: 11px 26px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  border: 2px solid $accent;
+  border-radius: 10px;
+  transition: color 250ms linear, border-color 250ms linear;
+  &:hover {
+    border-color: $btn-accent;
+  }
+
+  &:focus {
+    border-color: $btn-accent;
+    color: $second;
+  }
+
+  &--disabled {
+    border-color: $third;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 12px 34px;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+  }
+}
+
+.button__made {
+  display: block;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  text-align: center;
+  text-decoration-line: underline;
+  color: $accent;
+  transition: color 250ms linear, text-decoration-line 250ms linear;
+
+  &:hover {
+    color: $btn-accent;
+    text-decoration-line: underline;
+  }
+
+  &:focus {
+    color: $second;
+    text-decoration-line: underline;
+  }
+
+  &--disabled {
+    color: $third;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
+}
+
+.button__locations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+  width: 196px;
+  height: 42px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  background: $accent;
+  border-radius: 10px;
+  border: 1px solid $accent;
+  color: #000000;
+  transition: color 250ms linear, background-color 250ms linear,
+    border-color 250ms linear, fill 250ms linear;
+
+  &:hover {
+    background-color: $btn-accent;
+    border-color: $btn-accent;
+  }
+
+  &:focus {
+    background-color: $btn-accent;
+    border-color: $btn-accent;
+    color: $second;
+    fill: $second;
+  }
+
+  &--disabled {
+    border-color: $third;
+    background-color: $third;
+  }
+}
+
+.button__franchise {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+  width: 196px;
+  height: 42px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  background: initial;
+  border-radius: 10px;
+  border: 2px solid $accent;
+  color: $btn;
+  transition: color 250ms linear, border-color 250ms linear, fill 250ms linear;
+  &:hover {
+    border-color: $btn-accent;
+  }
+
+  &:focus {
+    border-color: $btn-accent;
+    color: $second;
+    fill: $second;
+  }
+
+  &--disabled {
+    color: $third;
+  }
+}
+
+.btn__open-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+  width: 164px;
+  height: 42px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  background: $accent;
+  border-radius: 10px;
+  border: 1px solid $accent;
+  color: #000000;
+  transition: color 250ms linear, background-color 250ms linear,
+    border-color 250ms linear, fill 250ms linear;
+  &:hover {
+    background-color: $btn-accent;
+    border-color: $btn-accent;
+  }
+
+  &:focus {
+    background-color: $btn-accent;
+    border-color: $btn-accent;
+    color: $second;
+    fill: $second;
+  }
+
+  &--disabled {
+    border-color: $third;
+    background-color: $third;
+  }
+}
+
+// Кнопка модалкі Submit
+
+.modal__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px 34px;
+  align-self: center;
+  border: none;
+  border-radius: 10px;
+  color: $basic-black;
+  background-color: $basic-yellow;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+
+  transition: background-color $duration-function $timing-function,
+    box-shadow $duration-function $timing-function;
+
+  &:hover,
+  &:focus {
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}
+
+// Кнопка закриття мобалкі
+
+.close-button {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: none;
+  top: 12px;
+  right: 12px;
+  background-color: inherit;
+  cursor: pointer;
+  transition: fill $duration-function $timing-function;
+  transition: box-shadowLL;
+
+  &:hover,
+  &:focus {
+    fill: $accent;
+  }
+}
+
+.close-button__icon {
+  width: 11px;
+  height: 11px;
+}
+
+@media screen and (min-width: 768px) {
+  .close__button {
+    width: 24px;
+    height: 24px;
+  }
+
+  .close-button__icon {
+    width: 13px;
+    height: 13px;
+  }
+}

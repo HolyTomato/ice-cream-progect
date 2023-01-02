@@ -1,0 +1,50 @@
+.read {
+  background-color: $second;
+  border: 2px solid $accent;
+  border-radius: 10px;
+  transition: transform $duration-function $timing-function;
+  width: 280px;
+  height: 459px;
+  padding: 28px;
+
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    height: 449px;
+  }
+
+  &__tittle {
+    font-family: 'Seymour One';
+    font-style: normal;
+    text-align: center;
+    @include fonts(16, 24, 400);
+    color: $main;
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 32px;
+    }
+  }
+  &__video-wraper {
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 32px;
+    }
+  }
+  &__video {
+    width: 224px;
+    height: 199px;
+  }
+}
+
+.read__video {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+.read__description {
+  font-size: 14px;
+  line-height: calc(20 / 14);
+  color: #131313;
+  margin-top: 32px;
+}

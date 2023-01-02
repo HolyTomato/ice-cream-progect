@@ -1,0 +1,82 @@
+.advantages {
+  min-width: 320px;
+  background-color: $background;
+  color: $second;
+  padding-bottom: 64px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 195px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 45px;
+    padding-bottom: 178px;
+  }
+}
+
+.adv {
+  padding: 0 25px;
+  &__grid {
+    @media screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 80px;
+      padding: 0 44px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 0;
+    }
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__card:not(:last-child) {
+    margin-bottom: 28px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__svg {
+    margin-bottom: 32px;
+    transition: all 0.4s;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 32px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 40px;
+    }
+  }
+  &__svg:hover,
+  &__svg:focus {
+    transform: scale(1.2);
+  }
+  &__value {
+    @include fonts(36, 44, 700, 0.04em);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    @media screen and (min-width: 768px) {
+      @include fonts(48, 59, 700, 0.04em);
+      font-size: 48px;
+      line-height: calc(59 / 48);
+      margin-bottom: 12px;
+    }
+    @media screen and (min-width: 1200px) {
+      @include fonts(58, 71, 700, 0.04em);
+      font-size: 58px;
+      line-height: calc(71 / 58);
+    }
+  }
+  &__text {
+    @include fonts(12, 20, 700, 0.04em);
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      @include fonts(14, 24, 400);
+    }
+    @media screen and (min-width: 1200px) {
+      @include fonts(16, 28, 400, 0.02em);
+    }
+  }
+}
